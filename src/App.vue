@@ -5,7 +5,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const title = ref('Actions')
+const title = ref('Actions demo')
 
 </script>
 <script>
