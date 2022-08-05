@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - master
+  schedule:
+    - cron: "0 0 13 * * *"
 
 jobs:
   main:
@@ -13,7 +15,7 @@ jobs:
         with:
           persist-credentials: false
 
-      # react项目为npm run-script build，vue项目改为npm run build
+      # react项目为npm run-script build，vue项目为npm run build
       - name: Install and Build
         run: |
           npm install
